@@ -551,6 +551,13 @@ a:hover {
     margin: 60px auto 40px auto;
 }
 
+/* Comments */
+
+#disqus-thread {
+    max-width: 950px;
+    margin: 30px auto 30px auto;
+}
+
 /* Site footer */
 
 #site-footer {
@@ -581,6 +588,10 @@ a:hover {
 
 @media all and (max-width: 1000px) {
     #page-content .large-img {
+        max-width: 90%;
+    }
+
+    #disqus-thread {
         max-width: 90%;
     }
 }
