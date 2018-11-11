@@ -553,9 +553,40 @@ a:hover {
 
 /* Comments */
 
-#disqus_thread {
+#comments {
     max-width: 950px;
-    margin: 30px auto 30px auto;
+    margin: 50px auto 30px auto;
+    padding-top: 20px;
+    border-top: 1px solid rgb(200, 225, 230);
+}
+
+#comments p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(55, 58, 61);
+}
+
+#comments-button {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    background: rgb(40, 190, 180);
+    display: none;
+    margin: 60px auto 50px auto;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+#comments-button:hover {
+    background-color: rgb(45, 205, 195);
+    cursor: pointer;
+}
+
+#disqus_thread {
+    margin: 60px auto 50px auto;
 }
 
 /* Site footer */
@@ -591,7 +622,7 @@ a:hover {
         max-width: 90%;
     }
 
-    #disqus_thread {
+    #comments {
         max-width: 90%;
     }
 }
