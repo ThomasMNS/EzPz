@@ -551,6 +551,24 @@ a:hover {
     margin: 60px auto 40px auto;
 }
 
+/* Contact form */
+
+form {
+    width: 750px;
+    max-width: 90%;
+    margin: 0px auto 30px auto;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 500px; 
+    max-width: 90%;
+    height: 150px;
+}
+
 /* Comments */
 
 #comments {
