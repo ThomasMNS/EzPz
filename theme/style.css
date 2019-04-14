@@ -568,11 +568,44 @@ textarea {
     height: 150px;
 }
 
+/* Link */
+
+#link {
+    width: 750px;
+    max-width: 90%;
+    margin: 30px auto 0px auto;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 30px;
+    border-top: 1px solid rgb(200, 225, 230);
+    border-bottom: 1px solid rgb(200, 225, 230);
+}
+
+#link-header {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    margin: 5px 0px 3px 0px;
+}
+
+#link-description {
+    font-size: 18px;
+    color: rgb(33, 35, 37);
+    margin: 0px 0px 15px 0px;
+}
+
+#link-footer {
+    font-size: 17px;
+    color: rgb(100, 100, 100);
+    line-height: 25px;
+    margin: 0px 0px 5px 0px;
+}
+
+
 /* Comments */
 
 #comments {
     max-width: 950px;
-    margin: 50px auto 30px auto;
+    margin: 35px auto 30px auto;
     padding-top: 20px;
     border-top: 1px solid rgb(200, 225, 230);
 }
