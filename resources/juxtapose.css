@@ -9,6 +9,13 @@ div.juxtapose {
 	margin: 0px auto 30px auto;
 }
 
+/* EzPZ edit */
+@media all and (max-width: 1000px) {
+    div.juxtapose {
+        max-width: 90%;
+	}
+}
+
 div.jx-slider {
 	width: 100%;
 	height: 100%;
