@@ -158,12 +158,9 @@ a:hover {
     padding: 0;
     margin: 0 auto;
     list-style: none;
+    justify-content: space-evenly;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-}
-
-#bottom-nav li {
-    margin: 0px 0px 0px 75px;
 }
 
 #hub-title a {
