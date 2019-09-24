@@ -43,8 +43,11 @@ suggestions = [
 
     "Incinerate some items",
     "Collect collection tomes",
+    "Make some bags",
+    "Collect some flax",
 
     "Make a full set of armour",
+    "Mine one of every ore",
 
 
     "Run from Bodiam to Fiewon and back",
@@ -56,7 +59,8 @@ suggestions = [
     "Create an ugly looking outfit",
     "Compliment the developer",
     "Unequip all your clothes",
-    "Switch to the other server"
+    "Switch to the other server",
+    "Fill a building with fires"
 ]
 
 buttons = [
