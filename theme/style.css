@@ -706,6 +706,27 @@ textarea {
     font-size: 21px;
 }
 
+/* Suggest-O-Matic */
+
+#emperor-img {
+    display: block;
+    margin: 0px auto 20px auto;
+}
+
+#statement-para {
+    text-align: center;
+}
+
+#suggestion-para {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#button-para {
+    text-align: center;
+}
+
 @media all and (max-width: 800px) {
     #player-details {
         flex-direction: column;
