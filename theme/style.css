@@ -727,6 +727,10 @@ textarea {
     text-align: center;
 }
 
+#button {
+    font-size: 15px;
+}
+
 @media all and (max-width: 800px) {
     #player-details {
         flex-direction: column;
