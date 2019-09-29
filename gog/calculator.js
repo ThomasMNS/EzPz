@@ -22,6 +22,16 @@ var mining = [
     {"name": "osmiumOre", "level": 50, "camplevel": 60, "xp": 150},
 ]
 
+var cooking = [
+    {"name": "shrimp", "level": 1, "xp": 35},
+    {"name": "sardine", "level": 10, "xp": 70},
+    {"name": "herring", "level": 20, "xp": 105},
+    {"name": "mullet", "level": 30, "xp": 140},
+    {"name": "boxfish", "level": 40, "xp": 175},
+    {"name": "rockfish", "level": 50, "xp": 200},
+    {"name": "starslug", "level": 60, "xp": 215},
+]
+
 function setWoodcutting() {
     skill = woodcutting;
     calculateActions();
@@ -29,6 +39,11 @@ function setWoodcutting() {
 
 function setMining() {
     skill = mining;
+    calculateActions();
+}
+
+function setCooking() {
+    skill = cooking;
     calculateActions();
 }
 
