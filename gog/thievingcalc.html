@@ -12,7 +12,7 @@
         </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Collect Wasp Stings | EzPz</title>
+        <title>Guilds of Gods Thieving Calculator | EzPz</title>
         <link rel="stylesheet" href="https://www.ezpz.gg/theme/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
@@ -73,10 +73,14 @@
                 </div>
                 <div id="bottom-nav">
                     <div class="content">
-                        <span id="hub-title"><a href="https://www.ezpz.gg/stein">EzPz Stein:</a></span>
+                        <span id="hub-title"><a href="https://www.ezpz.gg/gog">EzPz Guilds of Gods:</a></span>
                           <ul>
-                                <li><a href="https://www.ezpz.gg/stein/quests">Quests</a></li>
-                                <li><a href="https://www.ezpz.gg/category/stein">News</a></li>
+                                <li><a href="https://www.ezpz.gg/gog/skills">Skills</a></li>
+                                <li><a href="https://www.ezpz.gg/gog/tips">Tips</a></li>
+                                <li><a href="https://www.ezpz.gg/gog/tools">Tools</a></li>
+                                <li><a href="https://www.ezpz.gg/gog/maps">Maps</a></li>
+                                <li><a href="https://www.ezpz.gg/gog/links">Links</a></li>
+                                <li><a href="https://www.ezpz.gg/category/gog">News</a></li>
                           </ul>
                       </div>
                 </div>
@@ -84,53 +88,100 @@
         </div>
     </header>
 <section id="main-content">
-    <h2 id="page-header">Collect Wasp Stings</h2>
-    <p id="page-meta">Written by <a href="https://www.ezpz.gg/about">MilkN2Sugars</a>. Last updated 24 December 2018.</p>
+    <h2 id="page-header">Guilds of Gods Thieving Calculator</h2>
+    <p id="page-meta">Written by <a href="https://www.ezpz.gg/about">MilkN2Sugars</a>. Last updated 29 September 2019.</p>
     <div id="page-content">
-        <p><h3>Quest Details</h3>
-<h4>How to start</h4>
-<p>Talk to Rei Mullet, stood outside the Karlsen House in the Rusty Bucket Winery, in the north-east of Farshore. She is below the house, towards the right. </p>
-<figure><a href="https://www.ezpz.gg/stein/rei-map.jpg" target="_blank"><img class="large-img" src="https://www.ezpz.gg/stein/rei-map.jpg"></a></figure>
-
-<figure><a href="https://www.ezpz.gg/stein/rei.jpg" target="_blank"><img class="large-img" src="https://www.ezpz.gg/stein/rei.jpg"></a>
-<figcaption>Rei Mullet.</figcaption></figure>
-
-<h4>Prerequisites</h4>
-<p>Must have completed <a href="https://www.ezpz.gg/stein/collect-harvest">Collect Harvest</a>. </p>
-<h4>Requirements</h4>
-<ul>
-<li>12x Wasp Sting</li>
-</ul>
-<h4>Reward</h4>
-<ul>
-<li>20 Gold</li>
-<li>401 Exp </li>
-<li>Warden of Truth </li>
-<li>Hopeless Quilted Footsteps</li>
-</ul>
-<h4>Description</h4>
-<p>"Those damn wasps are destroying our whole harvest. Bring me 12 stings of those wasps and I will give you plenty of rewards."</p>
-<h3>Quest Walkthrough</h3>
-<p>The Wasp Stings are dropped by both Wasp Workers in the field to the west, and Wasp Fighters in the field to the north. Despite the name, Wasp Stingers to the north of the Wasp Fighters do not drop the Wasp Sting. </p>
-<figure><a href="https://www.ezpz.gg/stein/different-wasps.jpg" target="_blank"><img class="large-img" src="https://www.ezpz.gg/stein/different-wasps.jpg"></a>
-<figcaption>Pick your poison.</figcaption></figure>
-
-<p>The Wasp Workers are somewhat weaker, so it is recommended to kill them to complete the quest quickly. Wasp Fighters do drop better loot, so if you are high enough level, you could also kill them to gain some items along the way.  </p>
-<p>As always, remember to wield your best weapon, have some health potions handy if possible, and simply run away until the wasp disengages combat if you are low health and let it regenerate back up. Avoid running around near the Wasps as this could cause multiple to attack you at once. If this happens, again simply run away until they stop attacking and try to attack them one at a time.</p>
-<p>With the 12 Stings collected, return to Rei to complete the quest.  </p></p>
+        <p>
+        <p>Enter your current XP or level, and goal XP or level, to see how many times you will need to steal to reach it.</p>
+        <form id="player-details">
+            <fieldset>
+                <p><label for="currentXPField">Current XP:</label> <input id="currentXPField" type="number" min="0" placeholder="0" onkeyup="getCurrentXP()" onchange="getCurrentXP()"></p>
+                <p><label for="currentLevelField">Current Level:</label> <input id="currentLevelField" type="number" min="1" max="100" placeholder="1" onkeyup="getCurrentLevel()" onclick="getCurrentLevel()"></p>
+            </fieldset>
+            <fieldset>
+            <p><label for="targetXPField">Target XP:</label> <input id="targetXPField" type="number" min="1" placeholder="1" onkeyup="getTargetXP()" onclick="getTargetXP()"></p>
+            <p><label for="targetLevelField">Target Level:</label> <input id="targetLevelField" type="number" min="1" placeholder="1" onkeyup="getTargetLevel()" onclick="getTargetLevel()"></p>
+        </fieldset>
+        </form>
+        <p id="xp-required"><strong>XP required:</strong> <span id="XPRequiredMessage">1</span></p>
+        <table id="resultsTable">
+            <tr>                
+                <th colspan="2">Level</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>XP per action</th>
+                <th>Actions required</th>
+            </tr>
+            <tr>
+                <td id="chest1Requirement">-</td>
+                <td>1</td>
+                <td><img src="https://www.ezpz.gg/gog/chest.png"></td>
+                <td>Chest</td>
+                <td>50</td>
+                <td id="chest1Actions">1</td>
+            </tr>
+            <tr>
+                <td id="man10Requirement">-</td>
+                <td>10</td>
+                <td><img src="https://www.ezpz.gg/gog/man-10.png"></td>
+                <td>Man</td>
+                <td>15</td>
+                <td id="man10Actions">1</td>
+            </tr>
+            <tr>
+                <td id="chest20Requirement">-</td>
+                <td>20</td>
+                <td><img src="https://www.ezpz.gg/gog/chest.png"></td>
+                <td>Chest</td>
+                <td>100</td>
+                <td id="chest20Actions">1</td>
+            </tr>
+            <tr>
+                <td id="man20Requirement">-</td>
+                <td>20</td>
+                <td><img src="https://www.ezpz.gg/gog/man-20.png"></td>
+                <td>Man</td>
+                <td>20</td>
+                <td id="man20Actions">1</td>
+            </tr>
+            <tr>
+                <td id="guardRequirement">-</td>
+                <td>30</td>
+                <td><img src="https://www.ezpz.gg/gog/guard.png"></td>
+                <td>Guard</td>
+                <td>50</td>
+                <td id="guardActions">1</td>
+            </tr>
+            <tr>
+                <td id="man30Requirement">-</td>
+                <td>30</td>
+                <td><img src="https://www.ezpz.gg/gog/man-30.png"></td>
+                <td>Man</td>
+                <td>35</td>
+                <td id="man30Actions">1</td>
+            </tr>
+            <tr>
+                <td id="shellChestRequirement">-</td>
+                <td>40</td>
+                <td><img src="https://www.ezpz.gg/gog/chest.png"></td>
+                <td>Chest<br><i>requires Shell Chest Key</i></td>
+                <td>300</td>
+                <td id="shellChestActions">1</td>
+            </tr>
+        </table>
+        <p><span style="color: green">&#10004;</span> Have the required level, <span style="color: red">&#10008;</span> don't have the required level, 
+            <span style="color: orangered">&#8212;</span> don't have the required level, but will at target.</p>
+        <p id="calculator-links"><a href="https://www.ezpz.gg/gog/calculators">More skill calculators</a></p>
+        <script src="https://www.ezpz.gg/gog/calculator.js"></script>
+        <script>setThieving()</script>
+    </p>
     </div>
 <div id="link">
     <p id="link-header">Shameless plug</p>
     <p id="link-description"><b><a href="http://bit.ly/ezpz-staxel" target="_blank">Staxel</a></b>: A sandbox farming game that is currently in development. Tend to your farm and work on the village by yourself, or enlist the aid of your friends via online multiplayer to turn it into a thriving farmstead! <b><a href="http://bit.ly/ezpz-staxel" target="_blank">Read more...</a></b></p>
     <p id="link-footer">I earn a commission from all purchases, helping offset the costs of running this site and keeping me writing content. It supports charity too! Thank you.</p>
 </div>    <div id="comments">
-        <p>And that's it. EzPz!</p>
-        <p>I really hope you found this Stein guide useful. If you have any comments at all, please do share them below.</p>
-        <p>Stuck or have a question? I'll try to help as soon as I can. And if I don't know the answer, maybe another reader will.
-        Have a tip or some advice? Noticed a mistake? Just want to say hi? Post away!</p>
-        <p>Thanks for reading,<br>
-            - Milk
-        </p>
+            <p>Got a comment or question? Add it below!</p>
         <button id="comments-button" onclick="loadDisqus();return false;">Load Disqus Comments 💬</button>
         <div id="disqus_thread"></div>
         <script>
@@ -140,8 +191,8 @@
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
         
         var disqus_config = function () {
-            this.page.url = 'https://www.ezpz.gg/stein/collect-wasp-stings';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = 'https://www.ezpz.gg/stein/collect-wasp-stings'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.url = 'https://www.ezpz.gg/gog/thievingcalc';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 'https://www.ezpz.gg/gog/thievingcalc'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
         
         var disqus_loaded = false;

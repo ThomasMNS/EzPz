@@ -32,6 +32,16 @@ var cooking = [
     {"name": "starslug", "level": 60, "xp": 215},
 ]
 
+var thieving = [
+    {"name": "chest1", "level": 1, "xp": 50},
+    {"name": "man10", "level": 10, "xp": 15},
+    {"name": "chest20", "level": 20, "xp": 100},
+    {"name": "man20", "level": 20, "xp": 20},
+    {"name": "guard", "level": 30, "xp": 50},
+    {"name": "man30", "level": 30, "xp": 35},
+    {"name": "shellChest", "level": 40, "xp": 300}
+]
+
 function setWoodcutting() {
     skill = woodcutting;
     calculateActions();
