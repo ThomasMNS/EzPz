@@ -57,6 +57,11 @@ function setCooking() {
     calculateActions();
 }
 
+function setThieving() {
+    skill = thieving;
+    calculateActions();
+}
+
 function getCurrentXP() {
     currentXP = Number(document.getElementById("currentXPField").value);
     if (currentXP < 0) {
