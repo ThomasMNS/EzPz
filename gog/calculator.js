@@ -42,6 +42,49 @@ var thieving = [
     {"name": "shellChest", "level": 40, "xp": 300}
 ]
 
+var fletching = [
+    {"name": "headlessArrow", "level": 1, "xp": 5},
+    {"name": "stringBow", "level": 1, "xp": 25},
+    {"name": "cutBow", "level": 1, "xp": 30},
+    {"name": "bow", "level": 1, "xp": 55},
+    {"name": "5Shafts", "level": 1, "xp": 20},
+    {"name": "copperArrowHead", "level": 1, "xp": 5},
+    {"name": "copperArrow", "level": 1, "xp": 14},
+    {"name": "10Shafts", "level": 10, "xp": 40},
+    {"name": "ironArrowHead", "level": 10, "xp": 10},
+    {"name": "ironArrow", "level": 10, "xp": 19},
+    {"name": "stringOakBow", "level": 10, "xp": 50},
+    {"name": "cutOakBow", "level": 15, "xp": 60},
+    {"name": "oakBow", "level": 15, "xp": 110},
+    {"name": "15Shafts", "level": 20, "xp": 60},
+    {"name": "steelArrowhead", "level": 20, "xp": 15},
+    {"name": "steelArrow", "level": 20, "xp": 24},
+    {"name": "stringAshBow", "level": 20, "xp": 75},
+    {"name": "cutAshBow", "level": 25, "xp": 90},
+    {"name": "ashBow", "level": 25, "xp": 165},
+    {"name": "rockBolt", "level": 25, "xp": 6},
+    {"name": "wolfClaw", "level": 25, "xp": 25},
+    {"name": "wolfClawArrow", "level": 25, "xp": 34},
+    {"name": "20Shafts", "level": 30, "xp": 80},
+    {"name": "neleniteArrowHead", "level": 30, "xp": 20},
+    {"name": "neleniteArrow", "level": 30, "xp": 29},
+    {"name": "stringFurBow", "level": 30, "xp": 100},
+    {"name": "cutFurBow", "level": 35, "xp": 120},
+    {"name": "furBow", "level": 35, "xp": 220},
+    {"name": "25Shafts", "level": 40, "xp": 100},
+    {"name": "gothiteArrowHead", "level": 40, "xp": 25},
+    {"name": "gothiteArrow", "level": 40, "xp": 34},
+    {"name": "stringKingMapleBow", "level": 40, "xp": 125},
+    {"name": "cutKingMapleBow", "level": 45, "xp": 150},
+    {"name": "kingMapleBow", "level": 45, "xp": 275},
+    {"name": "30Shafts", "level": 50, "xp": 120},
+    {"name": "osmiumArrowHead", "level": 50, "xp": 30},
+    {"name": "osmiumArrow", "level": 50, "xp": 39},
+    {"name": "stringMagicBow", "level": 50, "xp": 150},
+    {"name": "cutMagicBow", "level": 55, "xp": 180},
+    {"name": "magicBow", "level": 55, "xp": 330},
+]
+
 function setWoodcutting() {
     skill = woodcutting;
     calculateActions();
@@ -61,6 +104,12 @@ function setThieving() {
     skill = thieving;
     calculateActions();
 }
+
+function setFletching() {
+    skill = fletching;
+    calculateActions();
+}
+
 
 function getCurrentXP() {
     currentXP = Number(document.getElementById("currentXPField").value);
