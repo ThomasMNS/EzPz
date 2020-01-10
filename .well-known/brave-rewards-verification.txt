@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: ezpz.gg
-Token: 64de954f359d11a03c29ade240f097ba2776027f18f68f5a7943c1e8672c58b7
