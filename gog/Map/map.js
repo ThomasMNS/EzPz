@@ -68,7 +68,7 @@ var addUniqueLayer = function(layername, level, items, description, icons) {
             var mapIcon = new GoGIcon({iconUrl: icons[item["name"]]});
         }
         else {
-            var mapIcon = new GoGIcon({iconUrl: '/Map/marker.png'})
+            var mapIcon = new GoGIcon({iconUrl: 'Map/marker.png'})
         }
 
         group.addLayer(L.marker(item["location"], {icon: mapIcon}).bindPopup("<b>" + item["name"] + "</b>" + " (" + xyGoG(item["location"][0]) + ", " + xyGoG(item["location"][1]) + ")" + "<br>" + description));
@@ -155,14 +155,14 @@ citiesGroup.on('add', function() {
     });
 })
 
-addLayer("Anvils", "Overworld", [xy(36, 34), xy(175, 172), xy(21, 167), xy(21, 169), xy(264, 275), xy(85, 349)], "Anvil", "Hammer metal bars in to weapons and armour.<br>More information at <a href='https://gogzone.com/skills/smithing.html' target='_blank'>GoGZone</a>", '/Map/anvil_marker.png')
-addLayer("Banks", "Overworld", [xy(42, 35), xy(139, 7), xy(353, 58), xy(179, 173), xy(21, 174), xy(65, 342)], "Bank", "You can store your items here.", '/Map/bank_marker.png');
-addLayer("Furnaces", "Overworld", [xy(26, 8), xy(36, 31), xy(23, 165), xy(174, 172), xy(84, 347), xy(260, 275)], "Furnace", "<a href='https://gogzone.com/skills/smithing.html' target='_blank'>Smelt metal bars</a> and <a href='https://gogzone.com/skills/crafting.html' target='_blank'>fire pots</a>.", '/Map/furnace_marker.png')
-addLayer("Furnaces", "Dungeons", [xy(82, 122), xy(21, 165), xy(97, 164)], "Furnace", "<a href='https://gogzone.com/skills/smithing.html' target='_blank'>Smelt metal bars</a> and <a href='https://gogzone.com/skills/crafting.html' target='_blank'>fire pots</a>.", '/Map/furnace_marker.png')
-addLayer("Incinerators", "Overworld", [xy(71, 94), xy(162, 71)], "Incinerator", "Incinerate items to get shards to use in alchemy.<br><a href='https://gogzone.com/skills/firemaking.html' target='_blank'>GoGZone Firemaking guide</a>.", "/Map/incinerator_marker.png")
-addLayer("Incinerators", "Dungeons", [xy(23, 165)], "Incinerator", "Incinerate items to get shards to use in alchemy.<br><a href='https://gogzone.com/skills/firemaking.html' target='_blank'>GoGZone Firemaking guide</a>.", "/Map/incinerator_marker.png")
-addLayer("Pottery Wheels", "Overworld", [xy(24, 8), xy(189, 179), xy(69, 203)], "Pottery Wheel", "Shape clay in to unfired pots.<br><a href='https://gogzone.com/skills/crafting.html' target='_blank'>GoGZone Crafting guide</a>.", '/Map/pottery_wheel_marker.png')
-addLayer("Spinning Wheels", "Overworld", [xy(62, 77), xy(45, 174), xy(185, 179)], "Spinning Wheel", "Spin flax in to bowstrings or drawstrings.<br><a href='https://gogzone.com/skills/crafting.html' target='_blank'>GoGZone Crafting guide</a>.", "/Map/spinning_wheel_marker.png")
+addLayer("Anvils", "Overworld", [xy(36, 34), xy(175, 172), xy(21, 167), xy(21, 169), xy(264, 275), xy(85, 349)], "Anvil", "Hammer metal bars in to weapons and armour.<br>More information at <a href='https://gogzone.com/skills/smithing.html' target='_blank'>GoGZone</a>", 'Map/anvil_marker.png')
+addLayer("Banks", "Overworld", [xy(42, 35), xy(139, 7), xy(353, 58), xy(179, 173), xy(21, 174), xy(65, 342)], "Bank", "You can store your items here.", 'Map/bank_marker.png');
+addLayer("Furnaces", "Overworld", [xy(26, 8), xy(36, 31), xy(23, 165), xy(174, 172), xy(84, 347), xy(260, 275)], "Furnace", "<a href='https://gogzone.com/skills/smithing.html' target='_blank'>Smelt metal bars</a> and <a href='https://gogzone.com/skills/crafting.html' target='_blank'>fire pots</a>.", 'Map/furnace_marker.png')
+addLayer("Furnaces", "Dungeons", [xy(82, 122), xy(21, 165), xy(97, 164)], "Furnace", "<a href='https://gogzone.com/skills/smithing.html' target='_blank'>Smelt metal bars</a> and <a href='https://gogzone.com/skills/crafting.html' target='_blank'>fire pots</a>.", 'Map/furnace_marker.png')
+addLayer("Incinerators", "Overworld", [xy(71, 94), xy(162, 71)], "Incinerator", "Incinerate items to get shards to use in alchemy.<br><a href='https://gogzone.com/skills/firemaking.html' target='_blank'>GoGZone Firemaking guide</a>.", "Map/incinerator_marker.png")
+addLayer("Incinerators", "Dungeons", [xy(23, 165)], "Incinerator", "Incinerate items to get shards to use in alchemy.<br><a href='https://gogzone.com/skills/firemaking.html' target='_blank'>GoGZone Firemaking guide</a>.", "Map/incinerator_marker.png")
+addLayer("Pottery Wheels", "Overworld", [xy(24, 8), xy(189, 179), xy(69, 203)], "Pottery Wheel", "Shape clay in to unfired pots.<br><a href='https://gogzone.com/skills/crafting.html' target='_blank'>GoGZone Crafting guide</a>.", 'Map/pottery_wheel_marker.png')
+addLayer("Spinning Wheels", "Overworld", [xy(62, 77), xy(45, 174), xy(185, 179)], "Spinning Wheel", "Spin flax in to bowstrings or drawstrings.<br><a href='https://gogzone.com/skills/crafting.html' target='_blank'>GoGZone Crafting guide</a>.", "Map/spinning_wheel_marker.png")
 
 // Stores
 var stores = [
@@ -264,17 +264,17 @@ var stores = [
     }
 ]
 
-addUniqueLayer("Stores", "Overworld", stores, "Buy and sell items.<br>View items and prices at <a href='https://gogzone.com/npcs/stores.html' target='_blank'>GoGZone</a>", {"General Store": '/Map/general_store_marker.png',
-"Melee Store": '/Map/general_store_marker.png',
-"Archery Store": '/Map/archery_store_marker.png',
-"Magic Store": "/Map/magic_store_marker.png",
-"Fishing Store": "/Map/fishing_store_marker.png",
-"Woodcutting Store": "/Map/woodcutting_store_marker.png",
-"Mining Store": "/Map/mining_store_marker.png",
-"Crafting Store": "/Map/crafting_store_marker.png",
-"Alchemy Store": "/Map/alchemy_store_marker.png",
-"Metalsmith Store": "/Map/metalsmith_store_marker.png",
-"Clothing Store": "/Map/clothing_store_marker.png"})
+addUniqueLayer("Stores", "Overworld", stores, "Buy and sell items.<br>View items and prices at <a href='https://gogzone.com/npcs/stores.html' target='_blank'>GoGZone</a>", {"General Store": 'Map/general_store_marker.png',
+"Melee Store": 'Map/general_store_marker.png',
+"Archery Store": 'Map/archery_store_marker.png',
+"Magic Store": "Map/magic_store_marker.png",
+"Fishing Store": "Map/fishing_store_marker.png",
+"Woodcutting Store": "Map/woodcutting_store_marker.png",
+"Mining Store": "Map/mining_store_marker.png",
+"Crafting Store": "Map/crafting_store_marker.png",
+"Alchemy Store": "Map/alchemy_store_marker.png",
+"Metalsmith Store": "Map/metalsmith_store_marker.png",
+"Clothing Store": "Map/clothing_store_marker.png"})
 
 // Map settings
 // Extend CRS.Simple to make the origin the top left (as is done in GoG), rather than bottom left
