@@ -290,7 +290,7 @@ var map = L.map('mapid', {
     crs: mapCRS,
     minZoom: -3, 
     maxZoom: 3,
-    maxBounds: [[-200, -200], [3272, 3272]],
+    maxBounds: [[-500, -500], [3572, 3572]],
     layers: [citiesGroup, image]
 });
 
