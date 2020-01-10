@@ -48,6 +48,8 @@ var allLayers = {
 // Keep track of current level 
 // var currentLevel;
 
+var blankIcon = new GoGIcon({iconUrl: 'Markers/marker.png'})
+
 // Helper function to remove some boilerplate when adding layers
 var addLayer = function(layername, level, locations, itemName, description, iconUrl) {
     var mapIcon = new GoGIcon({iconUrl: iconUrl})
