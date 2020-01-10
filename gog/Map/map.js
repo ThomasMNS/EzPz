@@ -283,8 +283,8 @@ var mapCRS = L.extend({}, L.CRS.Simple, {
 });
 
 var bounds = [[0,0], [3072, 3072]];
-var image = L.imageOverlay('/Map/guilds-of-gods-map.png', bounds);
-var dungeonimage = L.imageOverlay('/Map/guilds-of-gods-dungeons-map.png', [[0, 0], [3072, 3072]]);
+var image = L.imageOverlay('Map/guilds-of-gods-map.png', bounds);
+var dungeonimage = L.imageOverlay('Map/guilds-of-gods-dungeons-map.png', [[0, 0], [3072, 3072]]);
 
 var map = L.map('mapid', {
     crs: mapCRS,
