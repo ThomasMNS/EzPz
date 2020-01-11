@@ -755,11 +755,11 @@ textarea {
         display: block;
     }
 
-    input[type=checkbox] ~ span {
+    #menu-check ~ span {
         display: none;
     }
 
-    input[type=checkbox]:checked ~ span {
+    #menu-check:checked ~ span {
         display: flex; 
         justify-content: space-evenly;
         width: 100vw;
