@@ -94,45 +94,26 @@
     <div id="comments">
         <p>What do you think about this news? Post your thoughts in the comments below!<br>
         - Milk</p>
-        <button id="comments-button" onclick="loadDisqus();return false;">Load Disqus Comments 💬</button>
         <div id="disqus_thread"></div>
-        <script>
-        document.getElementById("comments-button").style.display = "block";
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        
+		<script>
+
+		/**
+		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+		
         var disqus_config = function () {
             this.page.url = 'https://www.ezpz.gg/gog/news/25092019';  // Replace PAGE_URL with your page's canonical URL variable
             this.page.identifier = 'https://www.ezpz.gg/gog/news/25092019'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
-        
-        var disqus_loaded = false;
-        function loadDisqus() {
-            if (disqus_loaded == false) {
-                disqus_loaded = true;
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://ezpzdotgg.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-                document.getElementById("comments-button").style.display = "none";
-            }
-        }
-
-        // Open comments when linked to directly - thanks Robert! https://www.robertwent.com/blog/loading-disqus-comments-on-demand-without-jquery-or-ajax/
-        var hash = window.location.hash;
-        if (hash.substring(0, 9) == "#comment-") {
-            loadDisqus();
-        }
-
-        // Open comments for search engines - thanks Robert! https://www.robertwent.com/blog/loading-disqus-comments-on-demand-without-jquery-or-ajax/
-        if(/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
-            loadDisqus();
-        }
-        </script>
-        <noscript><p><b>JavaScript disabled:</b> I use Disqus comments, which require JavaScript to function. Check out the <a href="https://www.ezpz.gg/contact">contact me</a> page for ways of getting in touch
+		
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://ezpzdotgg.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript><p><b>JavaScript disabled:</b> I use Disqus comments, which require JavaScript to function. Check out the <a href="https://www.ezpz.gg/contact">contact me</a> page for ways of getting in touch
         that don't require JavaScript. Thanks!</p></noscript>
 
         </div>
