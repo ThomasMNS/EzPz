@@ -907,7 +907,7 @@ textarea {
 }
 
 @media all and (max-width: 400px) {
-	#top-banner {
+	#logo-svg {
 		width: 215px;
 		height: 70px;
 	}
