@@ -63,6 +63,8 @@ a:hover {
 
 #logo-svg {
     display: block;
+	width: 230px;
+	height: 75px;
 }
 
 #logo-text {
@@ -901,6 +903,13 @@ textarea {
 @media all and (max-width: 770px) {
 	#top-banner {
 		width: 95%;
+	}
+}
+
+@media all and (max-width: 400px) {
+	#top-banner {
+		width: 215px;
+		height: 70px;
 	}
 }
 
