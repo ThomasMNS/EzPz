@@ -590,6 +590,14 @@ textarea {
     margin: 0px 0px 15px 0px;
 }
 
+/* Banners */
+
+#top-banner {
+	display: block;
+	margin: 15px auto 5px auto;
+}
+
+
 /* Comments */
 
 #comments {
@@ -887,4 +895,10 @@ textarea {
         content: " ";
         white-space: pre;
     }
+}
+
+@media all and (max-width: 770px) {
+	#top-banner {
+		width: 95%;
+	}
 }
