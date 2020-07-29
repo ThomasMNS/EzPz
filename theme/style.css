@@ -570,24 +570,21 @@ textarea {
 #link {
     width: 750px;
     max-width: 90%;
-    margin: 30px auto 0px auto;
+    margin: 25px auto 0px auto;
     font-family: 'Libre Baskerville', serif;
     line-height: 30px;
     border-top: 1px solid rgb(200, 225, 230);
-    border-bottom: 1px solid rgb(200, 225, 230);
-}
-
-#link-header {
-    text-align: center;
-    font-size: 16px;
-    color: rgb(100, 100, 100);
-    margin: 5px 0px 3px 0px;
 }
 
 #link-description {
     font-size: 18px;
     color: rgb(33, 35, 37);
-    margin: 0px 0px 15px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+#switch-banner {
+	display: block;
+	margin: 0px auto;
 }
 
 /* Banners */
@@ -602,8 +599,8 @@ textarea {
 
 #comments {
     max-width: 950px;
-    margin: 35px auto 30px auto;
-    padding-top: 20px;
+    margin: 30px auto 30px auto;
+    padding-top: 10px;
     border-top: 1px solid rgb(200, 225, 230);
 }
 
