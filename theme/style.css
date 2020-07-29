@@ -594,6 +594,10 @@ textarea {
 	margin: 15px auto 5px auto;
 }
 
+#bottom-banner {
+	display: block;
+	margin: 15px auto 25px auto;
+}
 
 /* Comments */
 
@@ -896,6 +900,12 @@ textarea {
 
 @media all and (max-width: 770px) {
 	#top-banner {
+		width: 95%;
+	}
+}
+
+@media all and (max-width: 345px) {
+	#bottom-banner {
 		width: 95%;
 	}
 }
