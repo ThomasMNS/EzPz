@@ -596,6 +596,11 @@ textarea {
 	margin: 15px auto 5px auto;
 }
 
+#mid-banner {
+	display: block;
+	margin: 15px auto;
+}
+
 #bottom-banner {
 	display: block;
 	margin: 15px auto 25px auto;
