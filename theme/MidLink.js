@@ -3,7 +3,7 @@ bannerLink.href = "http://bit.ly/ezpz-brave"
 bannerLink.target = "_blank"
 
 var banner = document.createElement('IMG');
-banner.src = '{{ SITEURL }}/theme/MidBanner.png';
+banner.src = 'https://www.ezpz.gg/theme/MidBanner.png';
 banner.id = "mid-banner";
 
 bannerLink.appendChild(banner)
