@@ -11,6 +11,6 @@ bannerLink.appendChild(banner)
 var mainContent = document.getElementById("page-content");
 var contentParas = mainContent.getElementsByTagName('P')
 var numberOfParas = contentParas.length
-if (numberOfParas >= 6) {
-	mainContent.insertBefore(bannerLink, contentParas[3].nextSibling)
+if (numberOfParas >= 8) {
+	mainContent.insertBefore(bannerLink, contentParas[5].nextSibling)
 }
