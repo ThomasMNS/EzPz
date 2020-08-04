@@ -793,6 +793,7 @@ textarea {
          
     .top-nav ul {
         flex-direction: column;
+        align-items: middle;
     }
 
     .top-nav li {
