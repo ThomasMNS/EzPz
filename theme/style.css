@@ -102,6 +102,7 @@ a:hover {
 .top-nav ul {
     display: flex;
     flex-direction: row;
+	align-items: center;
     width: 100%;
     justify-content: space-evenly;
     padding: 0;
@@ -793,7 +794,6 @@ textarea {
          
     .top-nav ul {
         flex-direction: column;
-        align-items: center;
     }
 
     .top-nav li {
