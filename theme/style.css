@@ -579,10 +579,21 @@ textarea {
     border-top: 1px solid rgb(200, 225, 230);
 }
 
+#link-upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profile-picture {
+    width: 70px;
+    height: 70px;
+    margin: 10px 20px 10px 0px;
+}
+
 #link-description {
     font-size: 18px;
     color: rgb(33, 35, 37);
-    margin: 10px 0px 10px 0px;
 }
 
 #switch-banner {
@@ -909,7 +920,15 @@ textarea {
 @media all and (max-width: 770px) {
 	#top-banner {
 		width: 95%;
-	}
+    }
+    
+    #link-upper {
+        flex-direction: column;
+    }
+
+    #link-description {
+        margin: 10px 0px 10px 0px;
+    }
 }
 
 @media all and (max-width: 400px) {
