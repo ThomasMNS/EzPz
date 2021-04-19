@@ -1,5 +1,5 @@
 var bannerLink = document.createElement('a');
-bannerLink.href = "http://bit.ly/ezpz-brave"
+bannerLink.href = "http://bit.ly/ezpz-fruitlab"
 bannerLink.target = "_blank"
 
 var banner = document.createElement('IMG');
