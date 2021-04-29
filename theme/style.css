@@ -512,6 +512,11 @@ a:hover {
     max-width: 950px;
 }
 
+.tenor-gif-embed {
+    max-width: 500px;
+    margin: 0px auto 30px auto;
+}
+
 #page-content ul {
     margin: 0 auto 25px auto;
 }
@@ -761,6 +766,10 @@ textarea {
 
 @media all and (max-width: 1000px) {
     #page-content .large-img {
+        max-width: 90%;
+    }
+
+    .tenor-gif-embed {
         max-width: 90%;
     }
 
