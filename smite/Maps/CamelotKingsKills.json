@@ -1,0 +1,290 @@
+{
+  "displayFieldName" : "",
+  "fieldAliases" : {
+    "OBJECTID" : "OBJECTID",
+    "SourceOwner" : "SourceOwner",
+    "SourcePlayer_Team" : "SourcePlayer.Team",
+    "Target" : "Target",
+    "TargetPlayer_Team" : "TargetPlayer.Team",
+    "X" : "X",
+    "Y" : "Y",
+    "Time" : "Time"
+  },
+  "geometryType" : "esriGeometryPoint",
+  "spatialReference" : {
+    "wkid" : 27700,
+    "latestWkid" : 27700
+  },
+  "fields" : [
+    {
+      "name" : "OBJECTID",
+      "type" : "esriFieldTypeOID",
+      "alias" : "OBJECTID"
+    },
+    {
+      "name" : "SourceOwner",
+      "type" : "esriFieldTypeString",
+      "alias" : "SourceOwner",
+      "length" : 8000
+    },
+    {
+      "name" : "SourcePlayer_Team",
+      "type" : "esriFieldTypeString",
+      "alias" : "SourcePlayer.Team",
+      "length" : 8000
+    },
+    {
+      "name" : "Target",
+      "type" : "esriFieldTypeString",
+      "alias" : "Target",
+      "length" : 8000
+    },
+    {
+      "name" : "TargetPlayer_Team",
+      "type" : "esriFieldTypeString",
+      "alias" : "TargetPlayer.Team",
+      "length" : 8000
+    },
+    {
+      "name" : "X",
+      "type" : "esriFieldTypeInteger",
+      "alias" : "X"
+    },
+    {
+      "name" : "Y",
+      "type" : "esriFieldTypeInteger",
+      "alias" : "Y"
+    },
+    {
+      "name" : "Time",
+      "type" : "esriFieldTypeDouble",
+      "alias" : "Time"
+    }
+  ],
+  "features" : [
+    {
+      "attributes" : {
+        "OBJECTID" : 1,
+        "SourceOwner" : "Genetics",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "PolarBearMike",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : -923,
+        "Y" : 2374,
+        "Time" : 211.58000000000001
+      },
+      "geometry" : {
+        "x" : -923,
+        "y" : 2374
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 2,
+        "SourceOwner" : "BigManTingz",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "sam4soccer2",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 2277,
+        "Y" : -3286,
+        "Time" : 577.99000000000001
+      },
+      "geometry" : {
+        "x" : 2277,
+        "y" : -3286
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 3,
+        "SourceOwner" : "BigManTingz",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "Hurriwind",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 2451,
+        "Y" : -1433,
+        "Time" : 588.49000000000001
+      },
+      "geometry" : {
+        "x" : 2451,
+        "y" : -1433
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 4,
+        "SourceOwner" : "BigManTingz",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "PolarBearMike",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 2457,
+        "Y" : -1989,
+        "Time" : 591.99000000000001
+      },
+      "geometry" : {
+        "x" : 2457,
+        "y" : -1989
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 5,
+        "SourceOwner" : "Netrioid",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "fineokay",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 2689,
+        "Y" : 1091,
+        "Time" : 601.49000000000001
+      },
+      "geometry" : {
+        "x" : 2689,
+        "y" : 1091
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 6,
+        "SourceOwner" : "Netrioid",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "PandaCat",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : -7015,
+        "Y" : 1656,
+        "Time" : 1160.01
+      },
+      "geometry" : {
+        "x" : -7015,
+        "y" : 1656
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 7,
+        "SourceOwner" : "CaptainTwig",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "Hurriwind",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 3144,
+        "Y" : 1662,
+        "Time" : 1424.75
+      },
+      "geometry" : {
+        "x" : 3144,
+        "y" : 1662
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 8,
+        "SourceOwner" : "BigManTingz",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "PandaCat",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 2750,
+        "Y" : 1596,
+        "Time" : 1454.28
+      },
+      "geometry" : {
+        "x" : 2750,
+        "y" : 1596
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 9,
+        "SourceOwner" : "BigManTingz",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "sam4soccer2",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 5421,
+        "Y" : -3381,
+        "Time" : 1646.48
+      },
+      "geometry" : {
+        "x" : 5421,
+        "y" : -3381
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 10,
+        "SourceOwner" : "BigManTingz",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "PolarBearMike",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 6111,
+        "Y" : -2597,
+        "Time" : 1655.99
+      },
+      "geometry" : {
+        "x" : 6111,
+        "y" : -2597
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 11,
+        "SourceOwner" : "Genetics",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "sam4soccer2",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 5315,
+        "Y" : -1134,
+        "Time" : 2033.3499999999999
+      },
+      "geometry" : {
+        "x" : 5315,
+        "y" : -1134
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 12,
+        "SourceOwner" : "CaptainTwig",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "Hurriwind",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 4974,
+        "Y" : -820,
+        "Time" : 2044.8199999999999
+      },
+      "geometry" : {
+        "x" : 4974,
+        "y" : -820
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 13,
+        "SourceOwner" : "Genetics",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "PandaCat",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 4093,
+        "Y" : 129,
+        "Time" : 2052.8200000000002
+      },
+      "geometry" : {
+        "x" : 4093,
+        "y" : 129
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 14,
+        "SourceOwner" : "Variety",
+        "SourcePlayer_Team" : "Camelot Kings",
+        "Target" : "sam4soccer2",
+        "TargetPlayer_Team" : "Jade Dragons",
+        "X" : 4596,
+        "Y" : -277,
+        "Time" : 2540.8200000000002
+      },
+      "geometry" : {
+        "x" : 4596,
+        "y" : -277
+      }
+    }
+  ]
+}
