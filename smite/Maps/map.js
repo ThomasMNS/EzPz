@@ -3,8 +3,9 @@ var image = L.imageOverlay('Maps/Conquest Map.png', bounds);
 
 var map = L.map('mapid', {
     crs: L.CRS.Simple,
-    minZoom: -3, 
-    maxZoom: 3,
-    maxBounds: bounds,
+    minZoom: -50, 
+    maxZoom: 50,
     layers: [image]
 });
+
+map.fitBounds(bounds);
