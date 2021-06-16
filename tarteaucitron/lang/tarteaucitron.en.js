@@ -12,7 +12,7 @@ tarteaucitron.lang = {
     "alertBigPrivacy": "I use cookies on my blog to see what content people enjoy and show relevant some ads.", /* EDIT */ 
     "alertSmall": "Manage services",
     "personalize": "Personalize",
-    "acceptAll": "OK, accept all",
+    "acceptAll": "Accept all", /* EDIT */
     "close": "Close",
 
     "privacyUrl": "Privacy policy",
