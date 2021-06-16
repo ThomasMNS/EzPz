@@ -9,7 +9,7 @@ tarteaucitron.lang = {
     "alertBigClick": "If you continue to browse this website,",
     "alertBig": "you are allowing all third-party services",
     
-    "alertBigPrivacy": "I use cookies to see what content people enjoy and show relevant ads (it really helps)", /* EDIT */ 
+    "alertBigPrivacy": "I use cookies on my blog to see what content people enjoy and show relevant some ads.", /* EDIT */ 
     "alertSmall": "Manage services",
     "personalize": "Personalize",
     "acceptAll": "OK, accept all",
