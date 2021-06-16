@@ -1,6 +1,6 @@
 /*global tarteaucitron */
 tarteaucitron.lang = {
-    "middleBarHead": "☝ 🍪",
+    "middleBarHead": "Omnomnom 🍪", /* EDIT */ 
     "adblock": "Hello! This site is transparent and lets you choose the 3rd party services you want to allow.",
     "adblock_call": "Please disable your adblocker to start customizing.",
     "reload": "Refresh the page",
@@ -9,7 +9,7 @@ tarteaucitron.lang = {
     "alertBigClick": "If you continue to browse this website,",
     "alertBig": "you are allowing all third-party services",
     
-    "alertBigPrivacy": "This site uses cookies and gives you control over what you want to activate",
+    "alertBigPrivacy": "I use cookies to see what content people enjoy and show relevant ads (it really helps)", /* EDIT */ 
     "alertSmall": "Manage services",
     "personalize": "Personalize",
     "acceptAll": "OK, accept all",
