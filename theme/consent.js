@@ -85,9 +85,8 @@ function enableFunction() {
           });
     }
     if (localStorage.getItem("EzPz_adsense") == "true") {
-        var adSense = document.createElement("script");
-        adSense.innerHTML = "alert('Adsense running!');"
-        document.head.appendChild(adSense);
+        console.log("Enabling adsense");
+        (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;
     }
 }
 
