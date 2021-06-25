@@ -7,8 +7,10 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'UA-131470497-1', { 'anonymize_ip': true });
+            gtag('consent', 'default', {
+                'analytics_storage': 'denied'
+              });
         </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -134,13 +136,18 @@
                 <p><a href="https://twitter.com/burjgg" target="_blank">Twitter</a></div>
             </div>
         </footer>
-        <script type="text/javascript">
-            (tarteaucitron.job = tarteaucitron.job || []).push('adsense');
-        </script>
-        <script type="text/javascript">
-            tarteaucitron.user.gtagUa = 'UA-131470497-1';
-            tarteaucitron.user.gtagMore = function () { gtag('config', 'UA-131470497-1', { 'anonymize_ip': true }) };
-            (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-        </script>
+        <div id="consent-background" class="hidden">
+            <div class="consent-window" id="consent-popup"><p>🍪 I use cookies for analytics (so I can see what content people prefer) and marketing (so I can run ads to support my work).</p>
+                <p><button type="button" class="consentButton" id="consentAccept" onclick="acceptFunction()">Accept and close</button><button type="button" class="consentButton" id="consentManage" onclick="manageFunction()">Manage</button></p>
+            </div>
+            <div class="consent-window hidden" id="manage-popup">
+                <p>I use Google Analytics to measure visits to the site and see which content is most popular. This uses cookies to report on visitor interactions. <a href="https://support.google.com/analytics/answer/6004245?hl=en" target="_blank">More information.</a></a></p>
+                <span class="consentLabel"><label for="allowAnalytics">Allow?</label> <input type="checkbox" name="allowAnalytics" id="allowedAnalytics" checked></span>
+                <p>I use Google AdSense to display adverts, which helps support my work. Google and third-party vendors use cookies to serve ads based on previous visits to this or other websites. <a href="https://support.google.com/adsense/answer/1348695?hl=en-GB" target="_blank">More information.</a></a></p>
+                <span class="consentLabel"><label for="allowAdSense">Allow?</label> <input type="checkbox" name="allowAdSense" id="allowedAdSense" checked></span>
+                <p><button type="button" class="consentButton" id="consentAccept" onclick="acceptFunction()">Accept all</button><button type="button" class="consentButton" id="consentSelected" onclick="selectedFunction()">Accept selected</button></p></div>
+            </div>
+        </div>
+        <script src='https://www.ezpz.gg/theme/consent.js'></script>
     </body>
 </html>
