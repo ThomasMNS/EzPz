@@ -952,3 +952,90 @@ textarea {
 		width: 95%;
 	}
 }
+
+/* Cookie Consent */ 
+
+#consent-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9998;
+}
+
+.consent-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 9999;
+    padding: 25px;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 30px;
+    color: rgb(33, 35, 37);
+    font-size: 18px;
+    border: 1px solid rgb(220, 225, 230);
+    box-shadow: 0 5px 10px 0px rgb(0 0 0 / 8%);
+    max-height: 80%;
+    overflow: auto;
+}
+
+#consent-popup p {
+    margin: 1.5em 1.5em 1.7em 1.5em;
+}
+
+#manage-popup p {
+    margin: 1.5em 1.5em 1.7em 1.5em;
+}
+
+.consentLabel {
+    display: block;
+    margin: -1em 1.5em 1.8em 1.5em;
+}
+
+.consentButton { 
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 12px 8px 0;
+    border: none;
+}
+
+#consentAccept {
+    background-color: rgb(76, 175, 80);
+    color: white;
+}
+
+#consentAccept:hover {
+    background-color:rgb(77, 193, 82)
+}
+
+#consentManage {
+    color: rgb(33, 35, 37);
+    background-color: rgb(220, 225, 230);
+}
+
+#consentManage:hover {
+    background-color: rgb(231, 235, 239);
+}
+
+#consentSelected {
+    color: rgb(33, 35, 37);
+    background-color: rgb(220, 225, 230);
+}
+
+#consentSelected:hover {
+    background-color: rgb(231, 235, 239);
+}
+
+.hidden {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+    .consent-window {
+        width: 80%;
+    }
+}
