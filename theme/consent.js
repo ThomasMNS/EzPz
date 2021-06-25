@@ -24,8 +24,8 @@ else {
         return response.json()
     })
     .then(function(data) {
-        console.log("Country " + data["geoplugin_countryName"])
-        if (popupCountries.includes(data["geoplugin_countryName"]) == true) {
+        console.log("Country " + data["country"])
+        if (popupCountries.includes(data["country"]) == true) {
             console.log("Country is in EU")
             popupFunction();
             showPrefsLink();
