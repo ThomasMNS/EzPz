@@ -87,6 +87,12 @@ function enableFunction() {
         (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;
         (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;
     }
+    else {
+        for (item of document.getElementsByClassName("adsbygoogle")) {
+            item.style.height = 0;
+        }
+        errorFunction();
+    }
 }
 
 function showPrefsLink() {
