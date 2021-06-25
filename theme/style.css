@@ -1031,7 +1031,7 @@ textarea {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 @media all and (max-width: 800px) {
