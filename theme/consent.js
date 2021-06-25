@@ -88,6 +88,7 @@ function enableFunction() {
         (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;
     }
     else {
+        console.log("Backup banners");
         for (item of document.getElementsByClassName("adsbygoogle")) {
             item.style.height = 0;
         }
