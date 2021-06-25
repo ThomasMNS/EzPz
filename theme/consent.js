@@ -1,5 +1,3 @@
-if (localStorage.getItem("EzPz_test") == "true") {
-
 var shouldShowPopup = true;
 var popupCountries = ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR",
 "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI",
@@ -93,6 +91,4 @@ function enableFunction() {
 
 function showPrefsLink() {
     document.getElementById("cookiePrefs").classList.remove("hidden");
-}
-
 }
