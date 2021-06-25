@@ -87,6 +87,7 @@ function enableFunction() {
     if (localStorage.getItem("EzPz_adsense") == "true") {
         console.log("Enabling adsense");
         (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;
+        (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;
     }
 }
 
