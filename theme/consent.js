@@ -79,6 +79,7 @@ function selectedFunction() {
 function enableFunction() {
     console.log("Enabling scripts")
     if (localStorage.getItem("EzPz_analytics") == "true") {
+        console.log("Enabling analytics");
         gtag('consent', 'update', {
             'analytics_storage': 'granted'
           });
