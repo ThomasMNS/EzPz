@@ -1,9 +1,9 @@
 if (localStorage.getItem("EzPz_test") == "true") {
 
 var shouldShowPopup = true;
-var popupCountries = ["Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czechia", "Denmark", "Estonia", "Finland", "France", "Germany", "Greece",
-"Hungary", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovakia", "Slovenia",
-"Spain", "Sweden", "United Kingdom"];
+var popupCountries = ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR",
+"HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI",
+"ES", "SE", "GB"];
 
 // Check whether to display the popup
 
@@ -19,7 +19,7 @@ if (localStorage.getItem("EzPz_prefs_chosen") == "true") {
 else {
     console.log("User has not made a decision");
     // Check if the user requires cookie consent  
-    fetch('http://www.geoplugin.net/json.gp')
+    fetch('https://ipinfo.io/json')
     .then(function(response) {
         return response.json()
     })
