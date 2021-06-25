@@ -92,3 +92,7 @@ function enableFunction() {
 function showPrefsLink() {
     document.getElementById("cookiePrefs").classList.remove("hidden");
 }
+
+function errorFunction() {
+    console.log("Ads are blocked");
+}
