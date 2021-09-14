@@ -139,9 +139,9 @@
     <div id="page-content">
         <p>
         <p>Set:<br>
-        <select id="setSelect" onchange="setChanged(); selectChange(); setGameChanged();"></select></p>
+        <select id="setSelect" onchange="setGameChanged(); setChanged(); selectChange();"></select></p>
         <p>Game:<br>
-        <select id="gameSelect" onchange="selectChange(); setGameChanged();"><option></option></select></p>
+        <select id="gameSelect" onchange="setGameChanged(); selectChange();"><option></option></select></p>
         <p>Show:<br>
         <select id="eventSelect" onchange="selectChange()"><option>Kills</option><option>Wards</option></select></p>
         <p>By: (Use the Ctrl or Command key to select multiple)<br>
