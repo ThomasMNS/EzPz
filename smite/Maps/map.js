@@ -181,6 +181,7 @@ function setGameChanged() {
 
     document.getElementById("startTime").min = 0;
     document.getElementById("startTime").max = lastTime;
+    document.getElementById("startTime").value = 0;
     document.getElementById("endTime").min = 1;
     document.getElementById("endTime").max = lastTime;
     document.getElementById("endTime").value = lastTime;
