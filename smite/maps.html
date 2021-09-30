@@ -135,7 +135,7 @@
         </script>
         <section id="main-content">
     <h2 id="page-header">Smite Pro League Interactive Analysis Maps</h2>
-    <p id="page-meta">Written by <a href="https://www.ezpz.gg/about">Burj</a>. Last updated 14 September 2021.</p>
+    <p id="page-meta">Written by <a href="https://www.ezpz.gg/about">Burj</a>. Last updated 01 October 2021.</p>
     <div id="page-content">
         <p>
         <p>Set (not all available):<br>
@@ -147,20 +147,18 @@
         <p>By: (Use the Ctrl or Command key to select multiple)<br>
         <select id="playersSelect" onchange="selectChange()" size="10" multiple></select></p>
         <p>From:<br>
-        <input type="range" min="0" max="3600" value="0" id="startTime" onchange="startChange()"> <span id="startTimeLabel"></span></p>
+        <input type="range" min="0" max="3600" value="0" id="startTime" onchange="selectChange(); startChange()"> <span id="startTimeLabel"></span></p>
         <p>To:<br>
-        <input type="range" min="0" max="3600" value="0" id="endTime" onchange="endChange()"> <span id="endTimeLabel"></span></p>
+        <input type="range" min="0" max="3600" value="0" id="endTime" onchange="selectChange(); endChange()"> <span id="endTimeLabel"></span></p>
         <p>Display as:<br>
         <select id="displaySelect" onchange="displayChange(); selectChange();"><option>Points</option><option>Heatmap</option></select></p>
+        <p id="colourPara"><span id="team1Label">Team 1:</span> <input type="color" id="team1Colour" value="#0000ff" onchange="updateColours()"> <span id="team2Label">Team 2:</span> <input type="color" id="team2Colour" value="#ff0000" onchange="updateColours()"></p>
         <p>Flip chaos and order sides?: <input type="checkbox" id="flipBox" onchange="flipChange()"></p>
         <p>Hide base labels?: <input type="checkbox" id="hideLabelBox" onchange="hideLabelChange()"></p>
         <div id="mapid"></div>
         <p><b>Tips:</b> Zoom in and out using the scroll wheel or the buttons to the left. Click a marker to see more information.</p>
         <p><h3>Want more maps? Check out these from the Season 7 World Championship <a href="https://www.ezpz.gg/smite/news/smite-worlds-2021-maps">here</a>.</h3></p>
         <script src="Maps/map.js"></script>
-
-        <a class="e-widget no-button" href="https://gleam.io/W0p2E/smite-skin-giveaway" rel="nofollow">Smite Skin Giveaway!</a>
-        <script type="text/javascript" src="https://widget.gleamjs.io/e.js" async="true"></script>
     </p>
     </div>
         </section>

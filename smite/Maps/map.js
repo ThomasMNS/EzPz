@@ -193,9 +193,23 @@ function setGameChanged() {
 }
 setGameChanged();
 
+// Set the marker options 
+
+var markerOptions = {
+    radius: 10,
+    fillColor: "#ff7800",
+    color: "#000",
+    weight: 2,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+
 // Update the points based on the selected dropdowns
 var killsFiltered = L.geoJSON(killsJSON, {
     filter: killsFilter,
+    pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, markerOptions);
+    },
     onEachFeature: function (feature, layer) {
         if (feature.properties.EventType == "DIT_KillingBlow") {
             var popupText = 
@@ -304,6 +318,11 @@ function selectChange() {
     chaosMarker.setTooltipContent(baseLabels[1] + " base");
 
     document.getElementById("flipBox").checked = false;
+
+    // Colour picker
+    document.getElementById("team1Label").innerHTML = baseLabels[0] + ":"
+    document.getElementById("team2Label").innerHTML = baseLabels[1] + ":"
+    updateColours();
 }
 selectChange();
 
@@ -327,6 +346,9 @@ function flipChange() {
     baseLabels.reverse();
     orderMarker.setTooltipContent(baseLabels[0] + " base");
     chaosMarker.setTooltipContent(baseLabels[1] + " base");
+
+    updateColours();
+
 }
 
 function displayChange() {
@@ -338,16 +360,20 @@ function displayChange() {
 
     if (display == "Points") {
         map.addLayer(killsFiltered);
+        document.getElementById("colourPara").style.display = "block";
     }
     else {
         map.addLayer(killsHeatmap);
+        document.getElementById("colourPara").style.display = "none";
     }
+
 }
 displayChange();
 
 function startChange() {
     killsFiltered.clearLayers();
     killsFiltered.addData(killsJSON);
+    updateColours();
 
     var e = document.getElementById("displaySelect");
     var display = e.options[e.selectedIndex].text;
@@ -365,6 +391,7 @@ function startChange() {
 function endChange() {
     killsFiltered.clearLayers();
     killsFiltered.addData(killsJSON);
+    updateColours();
 
     var e = document.getElementById("displaySelect");
     var display = e.options[e.selectedIndex].text;
@@ -389,3 +416,31 @@ function hideLabelChange() {
         map.addLayer(chaosMarker);
     }
 }
+
+function updateColours() {
+
+    if (document.getElementById("flipBox").checked == false) {
+        killsFiltered.eachLayer(function(layer) {
+            if (layer.feature.properties.SourceTeam == baseLabels[0]) {
+                layer.setStyle({fillColor: document.getElementById("team1Colour").value});
+            }
+            else if (layer.feature.properties.SourceTeam == baseLabels[1]) {
+                layer.setStyle({fillColor: document.getElementById("team2Colour").value});
+            }
+        });
+    }
+    else {
+        killsFiltered.eachLayer(function(layer) {
+            if (layer.feature.properties.SourceTeam == baseLabels[0]) {
+                layer.setStyle({fillColor: document.getElementById("team2Colour").value});
+            }
+            else if (layer.feature.properties.SourceTeam == baseLabels[1]) {
+                layer.setStyle({fillColor: document.getElementById("team1Colour").value});
+            }
+        });
+    }
+
+
+
+}
+updateColours();
